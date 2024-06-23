@@ -4,7 +4,7 @@ const parentList = document.getElementById('text');
 
 addBtn.addEventListener('click', () => {
 
-const childList = document.createElement('text');
+const childList = document.createTextNode('h2');
 childList.textContent = 'ボタンをクリックしました';
 
 while (parentList.firstChild) {
@@ -13,11 +13,4 @@ while (parentList.firstChild) {
 
 parentList.appendChild(childList);
 });
-
-
-
-
-
-
-
 
